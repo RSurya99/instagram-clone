@@ -21,10 +21,10 @@
 
                 <div class="wrap-item-like">
                     <div class="wrap-like">
-                        <img src="assets/img/4.png" alt="">
-                        <div id="triangle-up-like"></div>
+                        <img src="assets/img/4.png" alt="" onclick="menuLike()">
+                        <!-- <div id="triangle-up-like"></div> -->
 
-                        <div class="menu-like">
+                        <div class="menu-like" id="menu-like">
                             <div class="item-menu">
                                 <div style="display: flex; align-items: center;">
 
@@ -143,13 +143,13 @@
 
                     </div>
                 </div>
-                
 
                 
-                <div class="profile">
+                <div class="profile" onclick="menuProfile()">
                     <img src="assets/img/profilenew.jpg" alt="">
+                    
 
-                    <div class="menu-profile">
+                    <div class="menu-profile" id="menu-profile">
                         <div class="item-menu">
                             <img src="assets/img/menu-profile/1.png" alt="">
                             <span>Profile</span>
@@ -166,15 +166,19 @@
                         <div class="item-menu">
                             <span>Log Out</span>
                         </div>
+
+                        <!-- <div id="triangle-up"></div> -->
                     </div>
 
-                    <div id="triangle-up"></div>
+                    
+
+                    
 
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
