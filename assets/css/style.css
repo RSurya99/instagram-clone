@@ -63,12 +63,11 @@
 }
 
 .profile{
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid black;
     position: relative;
-    overflow: hidden;
 }
 
 .profile img{
@@ -108,4 +107,113 @@
     position: absolute;
     right: -76%;
     top: 39px;
+    display: none;
+}
+
+.menu-profile .item-menu{
+    display: flex;
+    align-items: center;
+    padding: 7px 11px;
+}
+.menu-profile hr{
+    margin: 0;
+    border: 1px solid #f7f7f7;
+}
+.menu-profile .item-menu:hover{
+    background-color: #efefef;
+    transition: 0.5s;
+}
+.menu-profile #triangle-up{
+    position: absolute;
+    z-index: 9999;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid #fff;
+    top: 30px;
+    right: 16%;
+}
+
+/* style menu -like */
+.wrap-item-like, .wrap-like{
+    position: relative;
+}
+.menu-like{
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.0975);
+    width: 512px;
+    height: 278px;
+    border-radius: 6px;
+    position: absolute;
+    right: -53%;
+    top: 38px;
+    display: none;
+    /* display: block; */
+    overflow-y: scroll;
+}
+
+.menu-like .item-menu{
+    display: flex;
+    align-items: center;
+    padding: 7px 11px;
+    justify-content: space-between;
+}
+
+.menu-like .item-menu:first-child{
+    display: flex;
+    align-items: center;
+    padding: 14px 11px 7px 11px;
+    justify-content: space-between;
+}
+
+.menu-like .item-menu .profile{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.menu-like .item-menu .profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-like .item-menu .profile-dua{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.menu-like .item-menu .profile-dua img{
+    width: 100%;
+    height: 100%;
+}
+
+.wrap-like #triangle-up-like{
+    position: absolute;
+    z-index: 9999;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid #FFF;
+    top: 28px;
+    right: 47%;
+}
+
+.menu-like .item-menu img{
+    margin-right: 10px;
+    width: 16px;
+}
+.menu-like .item-menu span{
+    font-size: 14px;
+    color: #7b7b7b;
+}
+.menu-like hr{
+    margin: 5px 8px 5px 57px;
+    border: 1px solid #f7f7f7;
 }
