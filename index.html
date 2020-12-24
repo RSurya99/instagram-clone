@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Clone</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- link slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 <body>
+    <!-- Navbar -->
     <div class="header">
         <div class="navbar">
             <img src="assets/img/1.png" class="brand" alt="">
@@ -178,6 +182,54 @@
             </div>
         </div>
     </div>
+    <!-- end navbar -->
+
+    <!-- content -->
+    <div class="content">
+        <div class="content-left">
+            <div class="multiple-items">
+                <span class="wrap-img">
+                  <img src="assets/img/content/1.jpg" alt="">
+                  <p>RSurya99</p>
+                </span>
+                <span class="wrap-img">
+                  <img src="assets/img/content/2.jpg" alt="">
+                  <p>Rafli Surya</p>
+                </span>
+                <span class="wrap-img">
+                  <img src="assets/img/content/3.jpg" alt="">
+                  <p>Surya Rafli</p>
+                </span>
+                <span class="wrap-img">
+                  <img src="assets/img/content/4.jpg" alt="">
+                  <p>Hadeh Man</p>
+                </span>
+                <span class="wrap-img">
+                  <img src="assets/img/content/5.jpg" alt="">
+                  <p>Pekora</p>
+                </span>
+                <span class="wrap-img">
+                  <img src="assets/img/content/6.jpg" alt="">
+                  <p>PekoWangy</p>
+                </span>
+            </div>
+        </div>
+        <div class="content-right">
+
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script>
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
+    </script>
 
     <script src="assets/js/script.js"></script>
 </body>
