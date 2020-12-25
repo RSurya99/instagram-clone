@@ -224,7 +224,7 @@
                         <div class="wrap-img">
                             <img src="assets/img/content/1.jpg" class="img-circle-3" alt="">
                         </div>
-                        <h3>rsurya99</h3>
+                        <h4>rsurya99</h4>
                     </div>
                 </div>
                 <div class="warp-v-p">
@@ -243,7 +243,7 @@
                     <p class="font-weight-bold">69 likes</p>
                     <p class="font-weight-bold">rsurya99 <span class="font-weight-500">Siapa disini yg cita2 nya ...</span></p>
                     <p style="color: #8e8e8e;">View all 69 comments</p>
-                    <p class="font-weight-bold">raflisp <span class="font-weight-500">Nikah sama keqing</span></p>
+                    <p class="font-weight-bold">Interfacely <span class="font-weight-500">Nikah sama keqing</span></p>
                     <p>3 HOURS AGO</p>
                 </div>
                 <hr/>
@@ -283,7 +283,7 @@
                 <div class="d-flex align-items-center">
                     <img src="assets/img/content/1.jpg" alt="" class="img-circle-2">
                     <div>
-                        <h3>Rafli Surya P</h3>
+                        <h3 style>Rafli Surya P</h3>
                         <h3 class="tx-grey font-weight-500">RSurya99</h3>
                     </div>
                 </div>
@@ -342,9 +342,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
     <script>
+        if ($(window).width() < 430) {
+            var slide = 5;
+         }
+         else {
+            var slide = 6;
+         }
         $('.multiple-items').slick({
             infinite: true,
-            slidesToShow: 6,
+            slidesToShow: slide,
             slidesToScroll: 1
           });
     </script>

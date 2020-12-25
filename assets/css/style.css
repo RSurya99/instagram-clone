@@ -1,3 +1,8 @@
+@font-face {
+    font-family: ProximaNova;
+    src: url('../fonts/proxima_ssv/ProximaNova-Regular.otf');
+}
+
 html, body{
     padding: 0;
     margin: 0;
@@ -5,6 +10,7 @@ html, body{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    font-family: ProximaNova;
 }
 
 .header{
@@ -132,6 +138,7 @@ html, body{
     padding: 7px 11px;
 }
 .menu-profile hr{
+    padding: 0;
     margin: 0;
     border: 1px solid #f7f7f7;
 }
@@ -285,7 +292,7 @@ html, body{
 }
 
 .content-left{
-    max-width: 60%;
+    max-width: 65%;
     border-radius: 2px;
 }
 
@@ -297,11 +304,11 @@ html, body{
 }
 
 .multiple-items .wrap-img{
-    width: 65px !important;
-    height: 64px !important;
+    width: 56px !important;
+    height: 56px !important;
     border-radius: 50%;
-    border: 3px solid #ff006a;
-    margin-left: 11px;
+    border: 3px solid #fd5949;
+    /* margin-left: 11px; */
 }
 
 .multiple-items .wrap-img img{
@@ -397,14 +404,18 @@ html, body{
 }
 
 .content-right{
-    width: 40%;
+    width: 315px;
     padding-left: 35px;
     padding-top: 22px;
+    position: fixed;
+    right: 0;
+    left: 50%;
+    transform: translateX(40%);
 }
 
 .content-right .img-circle{
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -440,15 +451,16 @@ html, body{
 
 .content-account .warp-v-p{
     width: 100%;
-    height: 500px;
-    background-color: wheat;
+    /* height: 500px; */
+    background: url('../img/content/windah.jpg');
+    background-size: cover;
 }
 
 .content-account .wrap-img{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 2px solid #ff006a;
+    border: 2px solid #fd5949;
     margin-right: 15px;
 }
 
@@ -470,6 +482,7 @@ html, body{
 }
 
 .item-account-bottom p{
+    font-size: 14px;
     padding: 0;
     margin: 7px 0;
 }
@@ -514,4 +527,43 @@ html, body{
 
 .add-comment button:hover{
     cursor: pointer;
+}
+
+@media(max-width: 998px){
+
+    .content{
+        justify-content: center;
+    }
+    
+    .content-right{
+        display: none;
+    }
+
+    .content-left{
+        max-width: 80% !important;
+    }
+
+    .slick-track{
+        display: flex !important;
+    }
+
+}
+
+@media(max-width: 635px){
+
+    .content{
+        margin-top: 6px;
+    }
+
+    .content-left{
+        max-width: 100% !important;
+    }
+
+    .content-account{
+        border: none;
+    }
+
+    .content-account hr{
+        display: none;
+    }
 }
