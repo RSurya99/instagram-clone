@@ -14,7 +14,9 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 .header .navbar{
@@ -275,6 +277,8 @@ html, body{
 /* style content */
 .content{
     display: flex;
+    position: relative;
+    top: 50px;
     max-width: 975px;
     margin: 0 auto;
     margin-top: 30px;
@@ -297,6 +301,7 @@ html, body{
     height: 64px !important;
     border-radius: 50%;
     border: 3px solid #ff006a;
+    margin-left: 11px;
 }
 
 .multiple-items .wrap-img img{
@@ -387,6 +392,10 @@ html, body{
     font-weight: 500;
 }
 
+.font-weight-bold{
+    font-weight: bold;
+}
+
 .content-right{
     width: 40%;
     padding-left: 35px;
@@ -421,4 +430,88 @@ html, body{
     font-size: 11px;
     margin: 3px 0;
     color: #c7c7c7;
+}
+
+.content-account{
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    margin-top: 30px;
+}
+
+.content-account .warp-v-p{
+    width: 100%;
+    height: 500px;
+    background-color: wheat;
+}
+
+.content-account .wrap-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #ff006a;
+    margin-right: 15px;
+}
+
+.content-account .wrap-img .img-circle-3{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.content-account .item-account-bottom{
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.content-account .item-account-bottom .item-account-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.item-account-bottom p{
+    padding: 0;
+    margin: 7px 0;
+}
+
+.item-account-bottom p:last-child{
+    font-size: 10px;
+    color: #8e8e8e;
+}
+
+.content-account hr{
+    height: 1px;
+    background-color: #d7d7d7;
+    border: none;
+}
+
+.add-comment{
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.add-comment input{
+    width: 100%;
+    border: none;
+}
+
+.add-comment input:focus{
+    outline: none;
+}
+
+.add-comment input::placeholder{
+    font-size: 14px;
+}
+.add-comment h2{
+    font-size: 14px;
+    color: #0095f6;
+}
+
+.add-comment button{
+    background-color: #FFF;
+    border: none;
+}
+
+.add-comment button:hover{
+    cursor: pointer;
 }
