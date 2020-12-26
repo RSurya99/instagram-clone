@@ -579,6 +579,7 @@ html, body{
 
 .image-wrapper{
     max-width: 30%;
+    margin-right: 40px;
 }
 
 .image-wrapper img{
@@ -613,6 +614,10 @@ html, body{
     border-radius: 2px;
 }
 
+.login-wrapper .login-form input::placeholder{
+    padding: 9px 0 8px 8px;
+}
+
 .login-wrapper .login-form input.username{
     margin-top: 24px;
     margin-bottom: 10px;
@@ -637,4 +642,32 @@ html, body{
     font-size: 12px;
     text-decoration: none;
     color: #00376b;
+}
+
+.login-wrapper .signup{
+    margin-top: 15px;
+    width: 350px;
+    height: 63px;
+    background-color: #FFF;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-wrapper .signup p{
+    margin: auto 0;
+    font-size: 14px;
+    color: #262626;
+}
+
+.login-wrapper .signup a{
+    text-decoration: none;
+    color: #0095f6;
+}
+
+.login-wrapper .get-the-app{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
